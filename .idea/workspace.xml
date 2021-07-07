@@ -1,8 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b11b13d6-c165-4eab-a986-43a2fa72416b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/sneakers/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/snickers-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sneakers-shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Anton Grushevskii" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1uWuKYi8MTNpM8sm0OwX4KtmEti" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apnea-trainer" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GIT\react projects\snickers-shop\public\img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b11b13d6-c165-4eab-a986-43a2fa72416b" name="Default Changelist" comment="" />
+      <created>1624793602465</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624793602465</updated>
+      <workItem from="1624793605613" duration="6026000" />
+      <workItem from="1625056461187" duration="596000" />
+      <workItem from="1625083384444" duration="26000" />
+      <workItem from="1625227587689" duration="7524000" />
+      <workItem from="1625313928826" duration="3359000" />
+      <workItem from="1625436021844" duration="29000" />
+      <workItem from="1625437245939" duration="256000" />
+      <workItem from="1625437596553" duration="122000" />
+      <workItem from="1625437732213" duration="16000" />
+      <workItem from="1625437817699" duration="5304000" />
+      <workItem from="1625482634479" duration="9526000" />
+      <workItem from="1625661261980" duration="1016000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
   </component>
 </project>

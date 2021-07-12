@@ -1,6 +1,8 @@
-import Card from './Card';
+import Card from './Card/Card';
 
 export default function Content(props) {
+    console.log(props.data);
+
     return (
         <section className="content p-40">
 
@@ -12,28 +14,16 @@ export default function Content(props) {
                 </div>
             </div>
 
-            <div className="d-flex justify-between">
-                <Card
-                    photo={"1"}
-                    name={"Men's shoe Nike Blazer Mid Suede"}
-                    price={500}
-                />
-                <Card
-                    photo={"2"}
-                    name={"Men's shoe Nike Air Max 270"}
-                    price={365}
-                />
-                <Card
-                    photo={"3"}
-                    name={"Men's shoe Nike Blazer Mid Suede"}
-                    price={799}
-                />
-                <Card
-                    photo={"4"}
-                    name={"Men's shoe Puma X Aka Boku Future Rider"}
-                    price={459}
-                />
-
+            <div className="d-flex flex-wrap">
+                {props.data.map(value => (
+                    <Card
+                        imageUrl={value.imageUrl}
+                        name={value.name}
+                        price={value.price}
+                        key={value.name}
+                    />
+                ))
+                }
             </div>
         </section>
     );

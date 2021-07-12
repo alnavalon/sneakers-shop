@@ -1,10 +1,11 @@
-export default function Drawer() {
+export default function Drawer(props) {
+
     return (
-        <div className="overlay" style={{display: "none"}}>
+        <div className="overlay">
             <div className="drawer d-flex flex-column">
                 <div className="drawer__header d-flex justify-between">
                     <h2>Cart</h2>
-                    <button className="remove-button mr-20">
+                    <button className="remove-button mr-20" onClick={props.closeCart}>
                         <img src="/img/cancel-btn.svg" alt="Remove" width={32} height={32}/>
                     </button>
                 </div>

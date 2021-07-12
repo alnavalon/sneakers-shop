@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b11b13d6-c165-4eab-a986-43a2fa72416b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Card.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Content.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Api/Api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Drawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Drawer/Drawer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JSX " />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -43,16 +49,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../apnea-trainer" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GIT\react projects\snickers-shop\src\components\Drawer" />
+      <recent name="D:\GIT\react projects\snickers-shop\src\components\Card" />
       <recent name="D:\GIT\react projects\snickers-shop\public\img" />
     </key>
   </component>
@@ -93,7 +103,10 @@
       <workItem from="1625437732213" duration="16000" />
       <workItem from="1625437817699" duration="5304000" />
       <workItem from="1625482634479" duration="9526000" />
-      <workItem from="1625661261980" duration="7443000" />
+      <workItem from="1625661261980" duration="7733000" />
+      <workItem from="1625742111430" duration="8806000" />
+      <workItem from="1625840496254" duration="11068000" />
+      <workItem from="1626046858636" duration="4234000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1625662317376</created>
@@ -102,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625662317376</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Project's structure divided into react functional components, small refactoring">
+      <created>1625706923071</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1625706923071</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +185,10 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+    <MESSAGE value="Project's structure divided into react functional components, small refactoring" />
+    <MESSAGE value="Added axios and requests from a mock API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added axios and requests from a mock API" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

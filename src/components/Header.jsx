@@ -11,10 +11,8 @@ export default function Header(props) {
                 </div>
             </div>
             <ul className="header-right d-flex justify-between align-center">
-                <li className="mr-30">
-                    <a href="#">
-                        <img src="/img/cart.png" alt="Cart" className="mr-10"/>
-                    </a>
+                <li className="mr-30 cu-p" onClick={props.onClickCart}>
+                    <img src="/img/cart.png" alt="Cart" className="mr-10"/>
                     <span>602 zł</span>
                 </li>
                 <li className="mr-30">

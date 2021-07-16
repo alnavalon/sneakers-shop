@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b11b13d6-c165-4eab-a986-43a2fa72416b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Api/Api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/complete-order.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/empty-cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Favorites.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Drawer/Drawer.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/sneakers/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/sneakers/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sneakers/11.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Content.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Drawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Drawer/Drawer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Api/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Api/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Content.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Drawer/Drawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Drawer/Drawer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,13 +28,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JSX " />
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
+        <option value="JSX " />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="Anton Grushevskii" />
@@ -48,7 +67,7 @@
     <property name="ChangesTree.GroupingKeys" value="" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apnea-trainer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,7 +79,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GIT\react projects\snickers-shop\src\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GIT\react projects\snickers-shop\src\Pages" />
       <recent name="D:\GIT\react projects\snickers-shop\src\components\Drawer" />
       <recent name="D:\GIT\react projects\snickers-shop\src\components\Card" />
       <recent name="D:\GIT\react projects\snickers-shop\public\img" />
@@ -106,7 +129,11 @@
       <workItem from="1625661261980" duration="7733000" />
       <workItem from="1625742111430" duration="8806000" />
       <workItem from="1625840496254" duration="11068000" />
-      <workItem from="1626046858636" duration="4234000" />
+      <workItem from="1626046858636" duration="8830000" />
+      <workItem from="1626089253147" duration="17705000" />
+      <workItem from="1626175234089" duration="6817000" />
+      <workItem from="1626255420313" duration="5864000" />
+      <workItem from="1626420376608" duration="4452000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1625662317376</created>
@@ -122,11 +149,28 @@
       <option name="project" value="LOCAL" />
       <updated>1625706923071</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added axios and requests from a mock API">
+      <created>1626051781199</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626051781199</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -173,11 +217,6 @@
             </State>
           </value>
         </entry>
-      </map>
-    </option>
-    <option name="OPEN_GENERIC_TABS">
-      <map>
-        <entry key="d180cfa6-a3d0-4964-9a46-2184290bcefb" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />

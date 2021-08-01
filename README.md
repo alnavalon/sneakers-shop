@@ -1,5 +1,7 @@
 # Simple mock online sneakers shop
 
+[Demo on gh-pages](https://alnavalon.github.io/sneakers-shop/)
+
 Stack:
 
 - ReactJS + hooks

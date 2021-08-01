@@ -1,50 +1,93 @@
-.cartEmpty {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex: 1;
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
 
-  .description {
-    width: 280px;
-    font-size: 16px;
-    line-height: 24px;
-    opacity: .6;
+.title {
+  margin: 0 0 30px;
+}
+
+.overlayVisible {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.drawer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 405px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cart {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+    margin-bottom: 20px;
   }
 }
 
-.greenButton {
-  width: 100%;
-  height: 55px;
-  text-align: center;
-  background: #9DD558;
-  border-radius: 18px;
-  border: none;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+.summary {
+  li {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
 
-  &:active {
-    background: darken(#9DD558, 10%);
+  li:last-child {
+    margin-bottom: 24px;
+  }
+
+  .decoration {
+    flex: 1;
+    border-bottom: 1px dashed #DFDFDF;
+    position: relative;
+    top: -3px;
+    margin: 0 5px;
+  }
+}
+
+.removeButton {
+  composes: removeButton from '../../CommonModules/Buttons.module.scss';
+  margin-right: 20px;
+}
+
+.orderButton {
+  composes: mainCartButton from '../../CommonModules/Buttons.module.scss';
+
+  img {
+    position: relative;
+    left: 60px;
+    top: 2px;
+    transition: transform 0.2s ease-in-out;
   }
 
   &:hover {
-    background: lighten(#9DD558, 10%);
-
     img {
-      transform: rotate(180deg) translateX(3px);
+      transform: translateX(5px);
     }
   }
-
-  .arrow {
-    position: relative;
-    top: 1px;
-    transform: rotate(180deg);
-    margin-right: 15px;
-    transition: transform 0.15s ease-in-out;
-  }
 }
+

@@ -1,0 +1,36 @@
+.cart {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title {
+  margin: 0 0 9px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 280px;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: .6;
+  margin-bottom: 40px;
+}
+
+.mainBtn {
+  composes: mainCartButton from '../../../CommonModules/Buttons.module.scss';
+
+  .arrow {
+    position: relative;
+    top: 1px;
+    transform: rotate(180deg);
+    margin-right: 15px;
+    transition: transform 0.15s ease-in-out;
+  }
+}

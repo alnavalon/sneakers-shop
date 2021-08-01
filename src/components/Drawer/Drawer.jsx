@@ -1,63 +1,103 @@
-import Styles from './Drawer.module.scss';
+import styles from './Drawer.module.scss';
+import {useContext, useState} from 'react';
+import AppContext from '../../context';
+import CartContent from './CartContent/CartContent';
+import {cartAPI, ordersAPI} from '../Api/Api';
+import {CartItem} from './CartItem/CartItem';
 
 export default function Drawer(props) {
+    const {
+        cartItems,
+        setCartItems,
+        cartTotalPrice,
+        isCartOpened,
+        setIsCartOpened,
+        onRemoveFromCart
+    } = useContext(AppContext);
+    const [isOrderComplete, setIsOrderComplete] = useState(false);
+    const [orderNumber, setOrderNumber] = useState(null);
+    const [isLoading, setIsLoading] = useState(false);
 
-    console.log(props.cartItems);
+    const delay = (ms) => new Promise((resolve => setTimeout(resolve, ms)));
 
+    const onClickOnOrder = async () => {
+        setIsLoading(true);
+        setIsOrderComplete(true);
+        try {
+            const result = await ordersAPI.addOrder({cartItems, cartTotalPrice});
+            if (result.status === 201) {
+                for (let i = 0; i < cartItems.length; i++) {
+                    await cartAPI.deleteItemFromCart(cartItems[i].id);
+                    await delay(500);
+                }
+                setCartItems([]);
+                setOrderNumber(result.data.id);
+            } else {
+                alert(`Server doesn't response. Please try it later`);
+            }
+        } catch (e) {
+            console.log(e);
+        } finally {
+            setIsLoading(false);
+        }
+    };
     return (
-        <div className="overlay">
-            <div className="drawer d-flex flex-column">
-                <div className="drawer__header d-flex justify-between">
-                    <h2>Cart</h2>
-                    <button className="remove-button mr-20" onClick={props.closeCart}>
-                        <img src="/img/cancel-btn.svg" alt="Remove" width={32} height={32}/>
+        <div className={`${styles.overlay} ${isCartOpened ? styles.overlayVisible : ''}`}>
+            <div className={styles.drawer}>
+                <div className={styles.header}>
+                    <h2 className={styles.title}>Cart</h2>
+                    <button className={styles.removeButton} onClick={() => {
+                        setIsCartOpened(false);
+                        setIsOrderComplete(false);
+                    }}>
+                        <img src="/img/cancel-btn.svg" alt="Close cart" width={32} height={32}/>
                     </button>
                 </div>
-                {props.cartItems.length > 0 ? (
+                {cartItems.length > 0 ?
                     <>
-                        <div className="cart d-flex flex-column">
+                        <div className={styles.cart}>
                             {
-                                props.cartItems.map((item) => (
-                                    <div className="cart-item d-flex align-center mb-20" key={item.id}>
-                                        <img className="cart-item__logo" src={item.imageUrl} alt="Sneakers" width={70}
-                                             height={70}/>
-                                        <div className="item-description d-flex flex-column">
-                                            <p className="item-name">{item.title}</p>
-                                            <b className="price">{item.price} zł</b>
-                                        </div>
-                                        <button className="remove-button">
-                                            <img src="/img/cancel-btn.svg" alt="Remove" width={32} height={32}/>
-                                        </button>
-                                    </div>)
+                                cartItems.map((item) => (
+                                        <CartItem
+                                            key={item.id}
+                                            id={item.id}
+                                            title={item.title}
+                                            price={item.price}
+                                            imageUrl={item.imageUrl}
+                                        />
+                                    )
                                 )
                             }
                         </div>
-                        <div className="cart__summary">
+                        <div className={styles.summary}>
                             <ul>
                                 <li><span>Total: </span>
-                                    <div className="decoration"></div>
-                                    <b> 2000 zł</b></li>
+                                    <div className={styles.decoration}></div>
+                                    <b> {cartTotalPrice} zł</b></li>
                                 <li><span>Tax 23%:</span>
-                                    <div className="decoration"></div>
-                                    <b> 500 zł</b></li>
+                                    <div className={styles.decoration}></div>
+                                    <b> {(cartTotalPrice * 0.23).toFixed(2)} zł</b></li>
                             </ul>
-                            <button className="summary__order-btn greenButton">
+                            <button
+                                className={styles.orderButton}
+                                onClick={onClickOnOrder}
+                                disabled={isLoading}
+                            >
                                 CHECKOUT
                                 <img src="/img/arrow.svg" alt="arrow"/>
                             </button>
                         </div>
                     </>
-                ) : (
-                    <div className={Styles.cartEmpty}>
-                        <img className="mb-20" width="120px" height="120px" src="/img/empty-cart.png" alt="Empty"/>
-                        <h2>Cart is empty</h2>
-                        <p className={Styles.description}>There are no items in your cart</p>
-                        <button onClick={props.closeCart} className={Styles.greenButton}>
-                            <img src="/img/arrow.svg" className={Styles.arrow} alt="Arrow"/>
-                            Back
-                        </button>
-                    </div>
-                )}
+                    :
+                    <CartContent
+                        title={isOrderComplete ? `Your order #${orderNumber} has been completed` : `Cart is empty`}
+                        imageUrl={isOrderComplete ? `/img/complete-order.png` : `/img/empty-cart.png`}
+                        description={isOrderComplete ?
+                            `Your order will be delivered soon` :
+                            `There are no items in your cart`}
+                        setIsOrderComplete={setIsOrderComplete}
+                    />
+                }
 
             </div>
         </div>

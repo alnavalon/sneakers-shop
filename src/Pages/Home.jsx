@@ -1,7 +1,26 @@
 import Card from '../components/Card/Card';
+import AppContext from '../context';
+import React from 'react';
 
 function Home(props) {
+    const {items} = React.useContext(AppContext);
 
+    const renderItems = () => {
+        const filteredItems = items.filter((item) => item.title.toLowerCase().includes(props.searchInputValue.toLowerCase()));
+
+        return (props.isLoading ? [...Array(8)] : filteredItems)
+            .map((value, index) => (
+                <Card
+                    key={value?.id ? value.id : index}
+                    onAddToCart={props.onAddToCart}
+                    onRemoveFromCart={props.onRemoveFromCart}
+                    onAddToFavorite={props.onAddToFavorite}
+                    onRemoveFromFavorite={props.onRemoveFromFavorite}
+                    loading={props.isLoading}
+                    {...value}
+                />
+            ));
+    };
     return (
         <section className="content p-40">
 
@@ -22,19 +41,8 @@ function Home(props) {
             </div>
 
             <div className="d-flex flex-wrap">
-                {props.data.filter((item) => item.title.toLowerCase().includes(props.searchInputValue.toLowerCase())).map(value => (
-                    <Card
-                        key={value.id}
-                        id={value.id}
-                        imageUrl={value.imageUrl}
-                        title={value.title}
-                        price={value.price}
-                        onAddToCart={props.onAddToCart}
-                        onRemoveFromCart={props.onRemoveFromCart}
-                        onAddToFavorite={props.onAddToFavorite}
-                        onRemoveFromFavorite={props.onRemoveFromFavorite}
-                    />
-                ))
+                {
+                    renderItems()
                 }
             </div>
         </section>

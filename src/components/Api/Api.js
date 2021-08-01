@@ -29,3 +29,16 @@ export const favoriteAPI = {
         return axios.delete(`https://60e8fd92673e350017c21967.mockapi.io/favorite/${id}`, undefined);
     }
 };
+
+export const ordersAPI = {
+    getOrders() {
+        return axios.get('https://60e8fd92673e350017c21967.mockapi.io/orders');
+    },
+    addOrder(order) {
+        return axios.post('https://60e8fd92673e350017c21967.mockapi.io/orders',
+            {
+                items: order.cartItems,
+                price: order.cartTotalPrice
+            });
+    }
+};

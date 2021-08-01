@@ -11,8 +11,7 @@ export default function Drawer(props) {
         setCartItems,
         cartTotalPrice,
         isCartOpened,
-        setIsCartOpened,
-        onRemoveFromCart
+        setIsCartOpened
     } = useContext(AppContext);
     const [isOrderComplete, setIsOrderComplete] = useState(false);
     const [orderNumber, setOrderNumber] = useState(null);

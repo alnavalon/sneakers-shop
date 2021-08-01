@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b11b13d6-c165-4eab-a986-43a2fa72416b" name="Default Changelist" comment="Added routing">
-      <change afterPath="$PROJECT_DIR$/src/CommonModules/Buttons.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/Orders.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer/CartContent/CartContent.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer/CartContent/CartContent.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer/CartItem/CartItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Drawer/CartItem/CartItem.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context.js" afterDir="false" />
+    <list default="true" id="b11b13d6-c165-4eab-a986-43a2fa72416b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Favorites.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Favorites.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Api/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Api/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card/Card.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card/Card.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Drawer/Drawer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Drawer/Drawer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Drawer/Drawer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Drawer/Drawer.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +136,7 @@
       <workItem from="1627554088010" duration="13557000" />
       <workItem from="1627644149038" duration="5431000" />
       <workItem from="1627731376660" duration="1902000" />
-      <workItem from="1627819798602" duration="9360000" />
+      <workItem from="1627819798602" duration="11972000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1625662317376</created>
@@ -183,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626427335683</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added context, css modules">
+      <created>1627829767667</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627829767667</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +244,8 @@
     <MESSAGE value="Project's structure divided into react functional components, small refactoring" />
     <MESSAGE value="Added axios and requests from a mock API" />
     <MESSAGE value="Added routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added routing" />
+    <MESSAGE value="Added context, css modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added context, css modules" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

@@ -20,15 +20,19 @@ function App() {
 
     useEffect(() => {
             async function fetchAllData() {
-                setIsLoading(true);
-                const cartItemsResponse = await cartAPI.getCart();
-                setCartItems(cartItemsResponse.data);
-                const favoriteResponse = await favoriteAPI.getFavorite();
-                setFavoriteItems(favoriteResponse.data);
-                const itemsResponse = await itemsAPI.getItems();
-                setItems(itemsResponse.data);
-
-                setIsLoading(false);
+                try {
+                    const [cartItemsResponse, favoriteResponse, itemsResponse] = await Promise.all(
+                        [cartAPI.getCart(), favoriteAPI.getFavorite(), itemsAPI.getItems()]
+                    );
+                    setCartItems(cartItemsResponse.data);
+                    setFavoriteItems(favoriteResponse.data);
+                    setItems(itemsResponse.data);
+                } catch (e) {
+                    alert(e + 'has been occurred');
+                    console.warn(e);
+                } finally {
+                    setIsLoading(false);
+                }
             }
 
             fetchAllData();
@@ -60,16 +64,19 @@ function App() {
         }
     };
 
-    const onRemoveFromCart = (id) => {
+    const onRemoveFromCart = async (id) => {
         let removedItem = cartItems.find(obj => obj.itemId === id);
         let resultId = removedItem ? removedItem.id : id;
-        cartAPI.deleteItemFromCart(resultId).then(result => {
+        try {
+            const result = await cartAPI.deleteItemFromCart(resultId);
             if (result.status === 200) {
                 setCartItems(prev => [...prev].filter((item) => item.id !== resultId));
             } else {
                 alert(`Cannot delete the item from the cart. Please try it again later`);
             }
-        });
+        } catch (e) {
+            alert(e);
+        }
     };
 
     const onAddToFavorite = async (item) => {

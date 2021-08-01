@@ -1,4 +1,4 @@
-# Simple mock online of sneakers shop
+# Simple mock online sneakers shop
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
